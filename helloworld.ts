@@ -1,8 +1,8 @@
 /* helloworld.ts */
 
 interface Vehicle {
-  engines: number;
-  wheels:  number;
+  engines:       number;
+  wheels:        number;
   isMotorbike(): boolean;
 }
 
@@ -15,11 +15,11 @@ class Car implements Vehicle {
   
   constructor(public engines: number, public wheels: number) {}
 
-  isMotorbike():boolean {
+  isMotorbike(): boolean {
     return (this.wheels === 2);
   }
 
-  setModel(model):void {
+  setModel(model): void {
     this.model = model;
   }
 }
